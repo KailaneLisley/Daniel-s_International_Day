@@ -1,0 +1,181 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Feliz Aniversário</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
+    <link rel="stylesheet" href="style.css">
+    <style>
+        html {
+            scroll-behavior: smooth;
+        }
+        .emoji {
+            position: fixed;
+            font-size: 2rem;
+            animation: floatUp 1.5s ease-out forwards;
+        }
+        
+        @keyframes floatUp {
+            0% {
+                transform: translateY(0);
+                opacity: 1;
+            }
+            100% {
+                transform: translateY(-100px);
+                opacity: 0;
+            }
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <nav class="navbar section-content">
+            <a href="#" class="nav-logo">
+                <h2 class="logo-text">Feliz Aniversário</h2>
+            </a>
+            <ul class="nav-menu">
+                <button id="menu-close-button" class="fas fa-times"></button>
+
+                <li class="nav-item"><a href="#inicio" class="nav-link">Home</a></li>
+                <li class="nav-item"><a href="#sobre" class="nav-link">Sobre</a></li>
+                <li class="nav-item"><a href="#menu" class="nav-link">Exclusividades</a></li>
+                <li class="nav-item"><a href="#fim" class="nav-link">Te amo!</a></li>
+            </ul>
+
+            <button id="menu-open-button" class="fas fa-bars"></button>
+        </nav>
+    </header>
+
+    <main>
+        <!-- Seção Hero -->
+        <section id="inicio" class="hero-section"> 
+            <div class="section-content">
+                <div class="hero-details">
+                    <h2 class="title">Daniel's International Day</h2>
+                    <h3 class="subtitle">Desde 29 de Março de 2005</h3>
+                    <p class="description">20 anos de existência da pessoa mais incrível do mundo!</p>
+
+                    <div class="buttons">
+                        <button class="button order-now" onclick="showEmojis('surpresa')">Surpresa!</button> 
+                        <button class="button contact-us" onclick="showEmojis('teamo')">Te amo!</button> 
+                    </div>
+                </div>
+                <div class="hero-image-wrapper">
+                    <img src="images/gift-dynamic-premium.png" alt="Imagem de um presente" class="hero-image">
+                </div>
+            </div>
+        </section>
+
+        <!-- Seção Sobre -->
+        <section id="sobre" class="about-section">
+            <div class="section-content">
+                <div class="about-image-wrapper">
+                    <img src="images/Nós.JPG" alt="Nós" class="about-image">
+                </div>
+                <div class="about-details">
+                    <h2 class="section-title">Sobre</h2>
+                    <p class="text">
+                        Oiii Dani, feliz aniversário!! <br>
+                        Então, queria muito fazer algo diferente pra você e pensei: "Por que não criar um site interativo sobre o amor da minha vida?!"
+                        <br><br>
+                        E assim eu fiz, com muito carinho, exclusivamente pra você! 
+                        Aqui contém algumas coisas sobre você que acredito que merecem destaque e que também são um reflexo de você através dos meus olhos.
+                        <br><br>
+                        Eu te amo muito, meu amor! Aproveita a experiência e espero muito que você goste! 💕
+                        <br><br>
+                        - Kailane Lisley
+                    </p>
+                </div>
+            </div>
+        </section>
+
+        <!-- Seção Exclusividades -->
+        <section id="menu" class="menu-section">
+            <h2 class="section-title">Exclusividades</h2>
+            <div class="section-content">
+                <ul class="menu-list">
+                    <li class="menu-item">
+                        <img src="images/piano.jpg" alt="Pianista" class="menu-image">
+                        <h3 class="name">Pianista Excepcional</h3>
+                        <p class="text">
+                            Você faz mais do que apenas tocar piano, você encanta através da música. 
+                            Eu poderia passar horas te ouvindo! (Inclusive, ainda estou no aguardo da minha playlist exclusiva kkkkkkk).
+                        </p>
+                    </li>
+                    <li class="menu-item">
+                        <img src="images/volei.jpg" alt="Vôlei" class="menu-image">
+                        <h3 class="name">Amante de Vôlei</h3>
+                        <p class="text">
+                            Nada se compara à sensação de jogar vôlei, né? Sempre que possível, você está em quadra com o pessoal ou pensando na próxima vez que vai poder jogar kkkk 
+                        </p>
+                    </li>
+                    <li class="menu-item">
+                        <img src="images/humor.jpg" alt="Humor" class="menu-image">
+                        <h3 class="name">Senso de Humor Único</h3>
+                        <p class="text">
+                            Você tem um humor exclusivamente seu! Estar com você é certeza de risadas espontâneas e momentos inesquecíveis.
+                            (Confesso, não sei mais como é viver sem seu senso de humor por perto kkkkk) 
+                        </p>
+                    </li>
+                    <li class="menu-item">
+                        <img src="images/sono.jpg" alt="Sono" class="menu-image">
+                        <h3 class="name">Mestre do Sono</h3>
+                        <p class="text">
+                            A habilidade de dormir a qualquer hora e em qualquer lugar é um superpoder invejado por muitos kkkkk. 
+                        </p>
+                    </li>
+                    <li class="menu-item">
+                        <img src="images/lider.jpg" alt="Líder" class="menu-image">
+                        <h3 class="name">Líder Nato</h3>
+                        <p class="text">
+                            Você é um líder admirável em todos os aspectos. Seu jeito passa segurança e é um exemplo pra muitos. 
+                            Os meninos se espelham em você e fico muito orgulhosa do trabalho incrível que você faz. 
+                        </p>
+                    </li>
+                    <li class="menu-item">
+                        <img src="images/we.jpg" alt="Qualidade" class="menu-image">
+                        <h3 class="name">Milhões de Qualidades</h3>
+                        <p class="text">
+                            Além de tudo isso, você tem um caráter encantador que me conquista todos os dias de uma forma inexplicável.
+                            São inúmeras as qualidades que você possui e todas elas fazem de você essa pessoa tão única e especial!
+                        </p>
+                    </li>
+                </ul>
+            </div>
+        </section>
+
+        <!-- Seção Galeria -->
+        <section id="fim" class="gallery-section">
+            <h2 class="section-title">Te amo!</h2>
+            <div class="section-content">
+                <ul class="gallery-list">
+                    <li class="gallery-item">
+                        <img src="images/MiniDaniel.jpg" alt="Daniel" class="gallery-image">
+                    </li>
+                </ul>
+            </div>
+        </section>
+    </main>
+
+    <script src="script.js"></script>
+    <script>
+        function showEmojis(type) {
+            const emojis = type === 'surpresa' ? ['🎉', '🎊', '🥳', '🎁'] : ['❤️', '💕', '💖', '😍'];
+            for (let i = 0; i < 10; i++) {
+                const emoji = document.createElement('div');
+                emoji.classList.add('emoji');
+                emoji.innerText = emojis[Math.floor(Math.random() * emojis.length)];
+                document.body.appendChild(emoji);
+                
+                emoji.style.left = Math.random() * window.innerWidth + 'px';
+                emoji.style.top = Math.random() * window.innerHeight + 'px';
+                
+                setTimeout(() => {
+                    emoji.remove();
+                }, 1500);
+            }
+        }
+    </script>
+</body>
+</html>
